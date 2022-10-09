@@ -20,7 +20,7 @@ img:hover, img:focus{
     border: 10px solid #100010;
 }
 header{
-    background-color:lightgray;
+    background-color:#deaa85;
     margin: 20px;
     padding: 20px;
 }
@@ -53,7 +53,7 @@ li a:hover {
     grid-template-columns:  repeat(4, 1fr);
     overflow: hidden;
 }
-body #home{
+body #homepage{
     border-bottom: 5px solid black; }
 
 body #shop{
