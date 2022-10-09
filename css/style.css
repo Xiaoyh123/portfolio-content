@@ -19,6 +19,19 @@ img{
 img:hover, img:focus{
     border: 10px solid #100010;
 }
+
+body #homepage{
+    border-bottom: 5px solid black; }
+
+body #shop{
+    border-bottom: 5px solid black; }
+
+body #about{
+    border-bottom: 5px solid black; }
+
+body #cart{
+    border-bottom: 5px solid black; }
+    
 header{
     background-color:#f0d1bb;
     margin: 20px;
