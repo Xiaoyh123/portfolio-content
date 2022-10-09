@@ -15,11 +15,6 @@ img{
 
 }
 
-#banner{
-    width: 90%;
-    height: 400px;
-
-}
 
 img:hover, img:focus{
     border: 10px solid #100010;
