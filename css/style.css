@@ -33,7 +33,7 @@ img:hover, img:focus{
     
    }
 
-body #homepage{
+body #home{
     border-bottom: 5px solid black; }
 
 body #shop{
@@ -81,7 +81,7 @@ li a:hover {
     grid-template-columns:  repeat(4, 1fr);
     overflow: hidden;
 }
-body #homepage{
+body #home{
     border-bottom: 5px solid black; }
 
 body #shop{
