@@ -15,10 +15,23 @@ img{
 
 }
 
-
 img:hover, img:focus{
     border: 10px solid #100010;
 }
+#bannerimage{
+    border: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+
+}
+
+#aboutpage {
+    background-image: url("../images/purplefloral.jpeg");
+    /* background-color: #cccccc; */
+    
+   }
 
 body #homepage{
     border-bottom: 5px solid black; }
@@ -27,7 +40,9 @@ body #shop{
     border-bottom: 5px solid black; }
 
 body #about{
-    border-bottom: 5px solid black; }
+    border-bottom: 5px solid black; 
+
+}
 
 body #cart{
     border-bottom: 5px solid black; }
@@ -73,8 +88,97 @@ body #shop{
     border-bottom: 5px solid black; }
 
 body #about{
-    border-bottom: 5px solid black; }
+    border-bottom: 5px solid black; 
+}
+
+body #aboutpage {
+    background-image: url('/images/purplefloral.jpeg');
+    background-color: #ADD8E6;
+}
+
 
 body #cart{
     border-bottom: 5px solid black; }
 
+body {
+    font-family: "Sono", sans-serif;
+
+    }
+.grid-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1/ span 7;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.shopitem1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:1;
+    grid-column-end:3;
+}
+.shopitem2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.shopitem3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.shopitem4 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.shopitem5 {
+    grid-area: 2/ span -1;
+    /* grid-column-start:2;
+    grid-column-end:3; */
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+}
+.shopitem5 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start:1;
+    grid-column-end:3;
+}
+h2 {
+    font-weight: 600;
+}
+
+.flex-container {
+display: flex;
+flex-direction: column;
+}
+
+@keyframes buttonAnimation {
+    0%   {width: 0px;}
+    20%  {width: 50px;}
+    40%  {width: 100px;}
+    60%  {width: 200px;}
+    80%  {width: 100px;}
+    100% {width: 50px;}
+} 
+
+.button {
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: tan;
+  animation-name: buttonAnimation;
+  /* animation-duration: 2s;
+  animation-iteration-count:10; */
+  animation: buttonAnimation 3s infinite;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+      animation: none;
+    }

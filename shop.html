@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Checkpoint Assignment</title>
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Sono">
+    <script src="https://kit.fontawesome.com/cc7a57835a.js" crossorigin="anonymous"></script>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GV9SN0657C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GV9SN0657C');
+</script>
+
   </head>
-  <body id="shop">
-    <header>
+  <body id="shoppage" class="grid-container">
+    <header class="shopitem1">
       <nav>
         <ul>
           <li class="active"><a href = "index.html" >Home</a></li>
@@ -16,31 +30,40 @@
           <li><a href = "cart.html">Cart</a></li>
         </ul>
       </nav>
-    <h1>Hello! Look around and find unique pieces for your home!</h1>
+    <h1>VICKY HUANG</h1>
   </header>
   <main>
 
 
-      <p>Jasmine Cloud Bowl</p>
 
-      <img src="images/bowl1.2.jpeg" alt="ceramic bowl" width="500" height="600">
-      <img src="images/bowl1.3.jpeg" alt ="ceramic bowl" width="500" height="600">
-      <img src="images/bowl1.4.jpeg" alt ="ceramic bowl" width="500" height="600">
 
-      <p>This item is made with love and care! The colors were inspired by the beautiful sky to remind loved ones of the bright days ahead.   
+      <img src="images/bowl1.2.jpeg" alt="ceramic bowl" width="500" height="600" class="shopitem1">
+      <img src="images/bowl1.3.jpeg" alt ="ceramic bowl" width="500" height="600" class="shopitem2">
+      <img src="images/bowl1.4.jpeg" alt ="ceramic bowl" width="500" height="600" class="shopitem3">
+
+      <aside class="shopitem4">
+      <h2>Jasmine Cloud Bowl</h2>
+
+
+      <p class="shopitem5">This item is made with love and care! The colors were inspired by the beautiful sky to remind loved ones of the bright days ahead.   
         <br> 
         $46.00 <br>
         Natural Stoneware <br>
         Dipped in Satin Glaze <br>
         Dishwasher/microwave safe (though hand washing is reccomended <br>
         W:6" H:25")
-        For larger order requests, please contact Vicky at Vickyceramics@gmail.com.</p>
+        For larger order requests, please contact Vicky at Vickyceramics@gmail.com.
+      <br>
+      <button class="button">Add to Cart<i class="fa-solid fa-cart-shopping"></i></i></button>
+      
+      </p>
         <br>
-        
-    </main>
-      <footer>
+      </aside>
+        </main>
+
+      <footer class="shopitem6">
         <p>Lorem Ipsum<br/>
-          &copy; Vicky's Ceramics/p>
+          &copy; Vicky's Ceramics</p>
       </footer>
   </body>
 </html>
