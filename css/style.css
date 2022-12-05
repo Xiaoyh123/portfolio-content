@@ -124,7 +124,7 @@ body {
 .grid-container {
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .1fr 1fr .1fr;
     column-gap: 20px;
     row-gap: 20px;
 }
@@ -307,9 +307,9 @@ footer {
     .grid-container {
         display:grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        /* grid-template-rows: 1fr 1fr 1fr;
         column-gap: 20px;
-        row-gap: 20px;
+        row-gap: 20px; */
     }
     .cartitem2 {
         grid-row-start: 2;
