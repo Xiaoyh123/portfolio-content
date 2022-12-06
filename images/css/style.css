@@ -1,0 +1,350 @@
+/* .skip a {
+    position: absolute;
+    top: -40px;
+    z-index: 1;
+    color: black;
+} */
+
+.skip a {
+    background: #703e60;
+    color: #ffffff;
+    height: 20px;
+    top: 0px;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+}
+
+.skip a:focus {
+    transform: translateY(0%);
+  }
+
+img{
+    border: 3px solid #100010;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid black;
+    width: 400px;
+    height: 400px; 
+
+}
+
+img:hover, img:focus{
+    border: 10px solid #100010;
+}
+#bannerimage{
+    border: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 90%;
+}
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#aboutpage {
+    background-image: url("../images/floralbackground.jpg");
+    background-color: #ADD8E6;
+    
+   }
+
+body #home{
+    border-bottom: 5px solid black; }
+
+body #shop{
+    border-bottom: 5px solid black; }
+
+body #about{
+    border-bottom: 5px solid black; 
+
+}
+
+body #cart{
+    border-bottom: 5px solid black; }
+    
+header{
+    background-color:#f0d1bb;
+    margin: 20px;
+    padding: 20px;
+}
+li a{
+    list-style-type: none;
+    margin: 0px;
+    padding: 14px 16px;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    font-family: ubunta;
+    font-weight: bold;
+}
+
+li a:visited {
+    color: black;
+}
+
+li a:hover {
+    border-bottom: 5px solid brown;
+    color: Brown;
+}
+
+/* .container {
+    border: 4px solid black;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+    overflow: hidden;
+} */
+body #home{
+    border-bottom: 5px solid black; }
+
+body #shop{
+    border-bottom: 5px solid black; }
+
+body #about{
+    border-bottom: 5px solid black; 
+}
+
+body #aboutpage {
+    background-image: url('/images/floralbackground.jpg');
+    background-color: #ADD8E6;
+}
+
+
+body #cart{
+    border-bottom: 5px solid black; }
+
+body {
+    font-family: "Sono", sans-serif;
+
+    }
+.grid-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .1fr 1fr .1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.shopitem1 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start:1;
+    grid-column-end:2;
+}
+.shopitem2 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.shopitem3 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.shopitem4 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:1;
+    grid-column-end:2;
+}
+
+.cartitem1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:1;
+    grid-column-end:2;
+}
+.cartitem2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start:1;
+    grid-column-end:2;
+}
+
+.artistitem1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:1;
+    grid-column-end:2;
+} 
+.artistitem2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start:1;
+    grid-column-end:2;
+} 
+
+h2 {
+    font-weight: 600;
+}
+
+.flex-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+@keyframes buttonAnimation {
+    0%   {width: 0px;}
+    20%  {width: 50px;}
+    40%  {width: 100px;}
+    60%  {width: 200px;}
+    80%  {width: 100px;}
+    100% {width: 50px;}
+} 
+
+.button {
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: tan;
+  animation-name: buttonAnimation;
+  /* animation-duration: 2s;
+  animation-iteration-count:10; */
+  animation: buttonAnimation 3s infinite;
+}
+
+.button2 {
+    border: none;
+    color: #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: tan;
+  }
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 50px;
+    /* height: 50px; */
+  }
+.aside{
+    width: 40%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+::selection {
+    background-color: #a77580;
+    color: #f1f1f1;
+    }
+
+@media screen and (min-width: 600px) {
+    .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        }
+    .cartitem2 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start:2;
+        grid-column-end:3;
+        }
+    .artistitem2 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start:2;
+        grid-column-end:3;
+        } 
+    .shopitem1 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start:1;
+        grid-column-end:2;
+        }
+    .shopitem2 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        }
+    .shopitem3 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        }
+    .shopitem4 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start:2;
+        grid-column-end:3;
+        }
+        li a{
+            list-style-type: none;
+            margin: 0px;
+            padding: 14px 16px;
+            overflow: hidden;
+            display: inline-block;
+            float: right;
+            text-decoration: none;
+            font-family: ubunta;
+            font-weight: bold;
+        }
+}
+
+@media screen and (min-width: 1000px) {
+    .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        }
+    .grid-container {
+        display:grid;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px; */
+    }
+    .cartitem2 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start:1;
+        grid-column-end:2;
+                }
+    .cartitem3 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start:2;
+        grid-column-end:3;
+            }
+    .artistitem2 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start:1;
+        grid-column-end:3;
+        } 
+    .shopitem4 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start:2;
+        grid-column-end:3;
+        }
+    .shopitem3 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start:2;
+        grid-column-end:3;
+        }
+}
+
+
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+      animation: none;}
+    }
